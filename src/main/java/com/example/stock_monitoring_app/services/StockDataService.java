@@ -44,7 +44,11 @@ public class StockDataService {
             if (dateTime.compareTo(from) >= 0 && dateTime.compareTo(to) <= 0) {
                 double closePrice = Double.parseDouble(entry.getValue().getClose());
                 prices.add(closePrice);
+                System.out.println(dateTime + " " + entry.getValue().getClose());
+
             }
+            System.out.println(dateTime + " " + entry.getValue().getClose());
+
         }
         return prices;
     }

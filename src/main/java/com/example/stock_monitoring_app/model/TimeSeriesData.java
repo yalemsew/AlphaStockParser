@@ -24,5 +24,9 @@ public class TimeSeriesData {
     @JsonProperty("5. volume")
     private String volume;
 
+    public String getClose() {
+        return close;
+    }
+
 }
 
